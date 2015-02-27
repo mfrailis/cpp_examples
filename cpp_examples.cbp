@@ -115,6 +115,7 @@
 			<Add alias="all" targets="spherical_coord;numeric_limits;string_methods;io_example;floating_format;vector_methods;auto_alias;argument_pass;" />
 		</VirtualTargets>
 		<Compiler>
+			<Add option="-std=c++11" />
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
