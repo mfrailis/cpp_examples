@@ -278,7 +278,7 @@ clean_argument_pass:
 	rm -rf bin
 	rm -rf $(OBJDIR_ARGUMENT_PASS)/src/ex8
 
-virtual_all: spherical_coord numeric_limits string_methods io_example floating_format vector_methods
+virtual_all: spherical_coord numeric_limits string_methods io_example floating_format vector_methods auto_alias argument_pass
 
 .PHONY: before_spherical_coord after_spherical_coord clean_spherical_coord before_numeric_limits after_numeric_limits clean_numeric_limits before_string_methods after_string_methods clean_string_methods before_io_example after_io_example clean_io_example before_floating_format after_floating_format clean_floating_format before_vector_methods after_vector_methods clean_vector_methods before_auto_alias after_auto_alias clean_auto_alias before_argument_pass after_argument_pass clean_argument_pass
 
