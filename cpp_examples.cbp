@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="cpp_examples" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="spherical_coord">
+				<Option output="bin/spherical_coord" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/spherical_coord/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="numeric_limits">
+				<Option output="bin/numeric_limits" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/numeric_limits" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="string_methods">
+				<Option output="bin/string_methods" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/string_methods" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="io_example">
+				<Option output="bin/io_example" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/io_example" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="floating_format">
+				<Option output="bin/floating_format" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/floating_format" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="vector_methods">
+				<Option output="bin/vector_methods" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/vector_methods" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="auto_alias">
+				<Option output="bin/auto_alias" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/auto_alias" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="argument_pass">
+				<Option output="bin/argument_pass" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/argument_pass" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="all" targets="spherical_coord;numeric_limits;string_methods;io_example;floating_format;vector_methods;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="src/ex1/spherical_coord.cpp">
+			<Option target="spherical_coord" />
+		</Unit>
+		<Unit filename="src/ex2/numeric_limits.cpp">
+			<Option target="numeric_limits" />
+		</Unit>
+		<Unit filename="src/ex3/string_methods.cpp">
+			<Option target="string_methods" />
+		</Unit>
+		<Unit filename="src/ex4/io_example.cpp">
+			<Option target="io_example" />
+		</Unit>
+		<Unit filename="src/ex5/floating_format.cpp">
+			<Option target="floating_format" />
+		</Unit>
+		<Unit filename="src/ex6/vector_methods.cpp">
+			<Option target="vector_methods" />
+		</Unit>
+		<Unit filename="src/ex7/auto_alias.cpp">
+			<Option target="auto_alias" />
+		</Unit>
+		<Unit filename="src/ex8/argument_pass.cpp">
+			<Option target="argument_pass" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
