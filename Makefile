@@ -12,14 +12,14 @@ LD = g++
 WINDRES = windres
 
 INC = 
-CFLAGS = -std=c++11 -Wall
+CFLAGS = -std=c++11 -Wall -g
 RESINC = 
 LIBDIR = 
 LIB = 
 LDFLAGS = 
 
 INC_SPHERICAL_COORD = $(INC)
-CFLAGS_SPHERICAL_COORD = $(CFLAGS) -O2
+CFLAGS_SPHERICAL_COORD = $(CFLAGS)
 RESINC_SPHERICAL_COORD = $(RESINC)
 RCFLAGS_SPHERICAL_COORD = $(RCFLAGS)
 LIBDIR_SPHERICAL_COORD = $(LIBDIR)
@@ -30,7 +30,7 @@ DEP_SPHERICAL_COORD =
 OUT_SPHERICAL_COORD = bin/spherical_coord
 
 INC_NUMERIC_LIMITS = $(INC)
-CFLAGS_NUMERIC_LIMITS = $(CFLAGS) -O2
+CFLAGS_NUMERIC_LIMITS = $(CFLAGS)
 RESINC_NUMERIC_LIMITS = $(RESINC)
 RCFLAGS_NUMERIC_LIMITS = $(RCFLAGS)
 LIBDIR_NUMERIC_LIMITS = $(LIBDIR)
@@ -41,7 +41,7 @@ DEP_NUMERIC_LIMITS =
 OUT_NUMERIC_LIMITS = bin/numeric_limits
 
 INC_STRING_METHODS = $(INC)
-CFLAGS_STRING_METHODS = $(CFLAGS) -O2
+CFLAGS_STRING_METHODS = $(CFLAGS)
 RESINC_STRING_METHODS = $(RESINC)
 RCFLAGS_STRING_METHODS = $(RCFLAGS)
 LIBDIR_STRING_METHODS = $(LIBDIR)
@@ -52,7 +52,7 @@ DEP_STRING_METHODS =
 OUT_STRING_METHODS = bin/string_methods
 
 INC_IO_EXAMPLE = $(INC)
-CFLAGS_IO_EXAMPLE = $(CFLAGS) -O2
+CFLAGS_IO_EXAMPLE = $(CFLAGS)
 RESINC_IO_EXAMPLE = $(RESINC)
 RCFLAGS_IO_EXAMPLE = $(RCFLAGS)
 LIBDIR_IO_EXAMPLE = $(LIBDIR)
@@ -63,7 +63,7 @@ DEP_IO_EXAMPLE =
 OUT_IO_EXAMPLE = bin/io_example
 
 INC_FLOATING_FORMAT = $(INC)
-CFLAGS_FLOATING_FORMAT = $(CFLAGS) -O2
+CFLAGS_FLOATING_FORMAT = $(CFLAGS)
 RESINC_FLOATING_FORMAT = $(RESINC)
 RCFLAGS_FLOATING_FORMAT = $(RCFLAGS)
 LIBDIR_FLOATING_FORMAT = $(LIBDIR)
@@ -74,7 +74,7 @@ DEP_FLOATING_FORMAT =
 OUT_FLOATING_FORMAT = bin/floating_format
 
 INC_VECTOR_METHODS = $(INC)
-CFLAGS_VECTOR_METHODS = $(CFLAGS) -O2
+CFLAGS_VECTOR_METHODS = $(CFLAGS)
 RESINC_VECTOR_METHODS = $(RESINC)
 RCFLAGS_VECTOR_METHODS = $(RCFLAGS)
 LIBDIR_VECTOR_METHODS = $(LIBDIR)
@@ -85,7 +85,7 @@ DEP_VECTOR_METHODS =
 OUT_VECTOR_METHODS = bin/vector_methods
 
 INC_AUTO_ALIAS = $(INC)
-CFLAGS_AUTO_ALIAS = $(CFLAGS) -O2
+CFLAGS_AUTO_ALIAS = $(CFLAGS)
 RESINC_AUTO_ALIAS = $(RESINC)
 RCFLAGS_AUTO_ALIAS = $(RCFLAGS)
 LIBDIR_AUTO_ALIAS = $(LIBDIR)
@@ -96,7 +96,7 @@ DEP_AUTO_ALIAS =
 OUT_AUTO_ALIAS = bin/auto_alias
 
 INC_ARGUMENT_PASS = $(INC)
-CFLAGS_ARGUMENT_PASS = $(CFLAGS) -O2
+CFLAGS_ARGUMENT_PASS = $(CFLAGS)
 RESINC_ARGUMENT_PASS = $(RESINC)
 RCFLAGS_ARGUMENT_PASS = $(RCFLAGS)
 LIBDIR_ARGUMENT_PASS = $(LIBDIR)
@@ -106,29 +106,55 @@ OBJDIR_ARGUMENT_PASS = obj/argument_pass
 DEP_ARGUMENT_PASS = 
 OUT_ARGUMENT_PASS = bin/argument_pass
 
-OBJ_SPHERICAL_COORD = $(OBJDIR_SPHERICAL_COORD)/src/ex1/spherical_coord.o
+INC_FUNC_OVERLOADING = $(INC)
+CFLAGS_FUNC_OVERLOADING = $(CFLAGS)
+RESINC_FUNC_OVERLOADING = $(RESINC)
+RCFLAGS_FUNC_OVERLOADING = $(RCFLAGS)
+LIBDIR_FUNC_OVERLOADING = $(LIBDIR)
+LIB_FUNC_OVERLOADING = $(LIB)
+LDFLAGS_FUNC_OVERLOADING = $(LDFLAGS)
+OBJDIR_FUNC_OVERLOADING = obj/func_overloading
+DEP_FUNC_OVERLOADING = 
+OUT_FUNC_OVERLOADING = bin/func_overloading
 
-OBJ_NUMERIC_LIMITS = $(OBJDIR_NUMERIC_LIMITS)/src/ex2/numeric_limits.o
+INC_FUNC_DECLARATION = $(INC)
+CFLAGS_FUNC_DECLARATION = $(CFLAGS)
+RESINC_FUNC_DECLARATION = $(RESINC)
+RCFLAGS_FUNC_DECLARATION = $(RCFLAGS)
+LIBDIR_FUNC_DECLARATION = $(LIBDIR)
+LIB_FUNC_DECLARATION = $(LIB)
+LDFLAGS_FUNC_DECLARATION = $(LDFLAGS)
+OBJDIR_FUNC_DECLARATION = obj/func_declaration
+DEP_FUNC_DECLARATION = 
+OUT_FUNC_DECLARATION = bin/func_declaration
 
-OBJ_STRING_METHODS = $(OBJDIR_STRING_METHODS)/src/ex3/string_methods.o
+OBJ_SPHERICAL_COORD = $(OBJDIR_SPHERICAL_COORD)/src/ex01/spherical_coord.o
 
-OBJ_IO_EXAMPLE = $(OBJDIR_IO_EXAMPLE)/src/ex4/io_example.o
+OBJ_NUMERIC_LIMITS = $(OBJDIR_NUMERIC_LIMITS)/src/ex02/numeric_limits.o
 
-OBJ_FLOATING_FORMAT = $(OBJDIR_FLOATING_FORMAT)/src/ex5/floating_format.o
+OBJ_STRING_METHODS = $(OBJDIR_STRING_METHODS)/src/ex03/string_methods.o
 
-OBJ_VECTOR_METHODS = $(OBJDIR_VECTOR_METHODS)/src/ex6/vector_methods.o
+OBJ_IO_EXAMPLE = $(OBJDIR_IO_EXAMPLE)/src/ex04/io_example.o
 
-OBJ_AUTO_ALIAS = $(OBJDIR_AUTO_ALIAS)/src/ex7/auto_alias.o
+OBJ_FLOATING_FORMAT = $(OBJDIR_FLOATING_FORMAT)/src/ex05/floating_format.o
 
-OBJ_ARGUMENT_PASS = $(OBJDIR_ARGUMENT_PASS)/src/ex8/argument_pass.o
+OBJ_VECTOR_METHODS = $(OBJDIR_VECTOR_METHODS)/src/ex06/vector_methods.o
 
-all: spherical_coord numeric_limits string_methods io_example floating_format vector_methods auto_alias argument_pass
+OBJ_AUTO_ALIAS = $(OBJDIR_AUTO_ALIAS)/src/ex07/auto_alias.o
 
-clean: clean_spherical_coord clean_numeric_limits clean_string_methods clean_io_example clean_floating_format clean_vector_methods clean_auto_alias clean_argument_pass
+OBJ_ARGUMENT_PASS = $(OBJDIR_ARGUMENT_PASS)/src/ex08/argument_pass.o
+
+OBJ_FUNC_OVERLOADING = $(OBJDIR_FUNC_OVERLOADING)/src/ex09/func_overloading.o
+
+OBJ_FUNC_DECLARATION = $(OBJDIR_FUNC_DECLARATION)/src/ex10/stats.o $(OBJDIR_FUNC_DECLARATION)/src/ex10/test_stats.o
+
+all: spherical_coord numeric_limits string_methods io_example floating_format vector_methods auto_alias argument_pass func_overloading func_declaration
+
+clean: clean_spherical_coord clean_numeric_limits clean_string_methods clean_io_example clean_floating_format clean_vector_methods clean_auto_alias clean_argument_pass clean_func_overloading clean_func_declaration
 
 before_spherical_coord: 
 	test -d bin || mkdir -p bin
-	test -d $(OBJDIR_SPHERICAL_COORD)/src/ex1 || mkdir -p $(OBJDIR_SPHERICAL_COORD)/src/ex1
+	test -d $(OBJDIR_SPHERICAL_COORD)/src/ex01 || mkdir -p $(OBJDIR_SPHERICAL_COORD)/src/ex01
 
 after_spherical_coord: 
 
@@ -137,17 +163,17 @@ spherical_coord: before_spherical_coord out_spherical_coord after_spherical_coor
 out_spherical_coord: before_spherical_coord $(OBJ_SPHERICAL_COORD) $(DEP_SPHERICAL_COORD)
 	$(LD) $(LIBDIR_SPHERICAL_COORD) -o $(OUT_SPHERICAL_COORD) $(OBJ_SPHERICAL_COORD)  $(LDFLAGS_SPHERICAL_COORD) $(LIB_SPHERICAL_COORD)
 
-$(OBJDIR_SPHERICAL_COORD)/src/ex1/spherical_coord.o: src/ex1/spherical_coord.cpp
-	$(CXX) $(CFLAGS_SPHERICAL_COORD) $(INC_SPHERICAL_COORD) -c src/ex1/spherical_coord.cpp -o $(OBJDIR_SPHERICAL_COORD)/src/ex1/spherical_coord.o
+$(OBJDIR_SPHERICAL_COORD)/src/ex01/spherical_coord.o: src/ex01/spherical_coord.cpp
+	$(CXX) $(CFLAGS_SPHERICAL_COORD) $(INC_SPHERICAL_COORD) -c src/ex01/spherical_coord.cpp -o $(OBJDIR_SPHERICAL_COORD)/src/ex01/spherical_coord.o
 
 clean_spherical_coord: 
 	rm -f $(OBJ_SPHERICAL_COORD) $(OUT_SPHERICAL_COORD)
 	rm -rf bin
-	rm -rf $(OBJDIR_SPHERICAL_COORD)/src/ex1
+	rm -rf $(OBJDIR_SPHERICAL_COORD)/src/ex01
 
 before_numeric_limits: 
 	test -d bin || mkdir -p bin
-	test -d $(OBJDIR_NUMERIC_LIMITS)/src/ex2 || mkdir -p $(OBJDIR_NUMERIC_LIMITS)/src/ex2
+	test -d $(OBJDIR_NUMERIC_LIMITS)/src/ex02 || mkdir -p $(OBJDIR_NUMERIC_LIMITS)/src/ex02
 
 after_numeric_limits: 
 
@@ -156,17 +182,17 @@ numeric_limits: before_numeric_limits out_numeric_limits after_numeric_limits
 out_numeric_limits: before_numeric_limits $(OBJ_NUMERIC_LIMITS) $(DEP_NUMERIC_LIMITS)
 	$(LD) $(LIBDIR_NUMERIC_LIMITS) -o $(OUT_NUMERIC_LIMITS) $(OBJ_NUMERIC_LIMITS)  $(LDFLAGS_NUMERIC_LIMITS) $(LIB_NUMERIC_LIMITS)
 
-$(OBJDIR_NUMERIC_LIMITS)/src/ex2/numeric_limits.o: src/ex2/numeric_limits.cpp
-	$(CXX) $(CFLAGS_NUMERIC_LIMITS) $(INC_NUMERIC_LIMITS) -c src/ex2/numeric_limits.cpp -o $(OBJDIR_NUMERIC_LIMITS)/src/ex2/numeric_limits.o
+$(OBJDIR_NUMERIC_LIMITS)/src/ex02/numeric_limits.o: src/ex02/numeric_limits.cpp
+	$(CXX) $(CFLAGS_NUMERIC_LIMITS) $(INC_NUMERIC_LIMITS) -c src/ex02/numeric_limits.cpp -o $(OBJDIR_NUMERIC_LIMITS)/src/ex02/numeric_limits.o
 
 clean_numeric_limits: 
 	rm -f $(OBJ_NUMERIC_LIMITS) $(OUT_NUMERIC_LIMITS)
 	rm -rf bin
-	rm -rf $(OBJDIR_NUMERIC_LIMITS)/src/ex2
+	rm -rf $(OBJDIR_NUMERIC_LIMITS)/src/ex02
 
 before_string_methods: 
 	test -d bin || mkdir -p bin
-	test -d $(OBJDIR_STRING_METHODS)/src/ex3 || mkdir -p $(OBJDIR_STRING_METHODS)/src/ex3
+	test -d $(OBJDIR_STRING_METHODS)/src/ex03 || mkdir -p $(OBJDIR_STRING_METHODS)/src/ex03
 
 after_string_methods: 
 
@@ -175,17 +201,17 @@ string_methods: before_string_methods out_string_methods after_string_methods
 out_string_methods: before_string_methods $(OBJ_STRING_METHODS) $(DEP_STRING_METHODS)
 	$(LD) $(LIBDIR_STRING_METHODS) -o $(OUT_STRING_METHODS) $(OBJ_STRING_METHODS)  $(LDFLAGS_STRING_METHODS) $(LIB_STRING_METHODS)
 
-$(OBJDIR_STRING_METHODS)/src/ex3/string_methods.o: src/ex3/string_methods.cpp
-	$(CXX) $(CFLAGS_STRING_METHODS) $(INC_STRING_METHODS) -c src/ex3/string_methods.cpp -o $(OBJDIR_STRING_METHODS)/src/ex3/string_methods.o
+$(OBJDIR_STRING_METHODS)/src/ex03/string_methods.o: src/ex03/string_methods.cpp
+	$(CXX) $(CFLAGS_STRING_METHODS) $(INC_STRING_METHODS) -c src/ex03/string_methods.cpp -o $(OBJDIR_STRING_METHODS)/src/ex03/string_methods.o
 
 clean_string_methods: 
 	rm -f $(OBJ_STRING_METHODS) $(OUT_STRING_METHODS)
 	rm -rf bin
-	rm -rf $(OBJDIR_STRING_METHODS)/src/ex3
+	rm -rf $(OBJDIR_STRING_METHODS)/src/ex03
 
 before_io_example: 
 	test -d bin || mkdir -p bin
-	test -d $(OBJDIR_IO_EXAMPLE)/src/ex4 || mkdir -p $(OBJDIR_IO_EXAMPLE)/src/ex4
+	test -d $(OBJDIR_IO_EXAMPLE)/src/ex04 || mkdir -p $(OBJDIR_IO_EXAMPLE)/src/ex04
 
 after_io_example: 
 
@@ -194,17 +220,17 @@ io_example: before_io_example out_io_example after_io_example
 out_io_example: before_io_example $(OBJ_IO_EXAMPLE) $(DEP_IO_EXAMPLE)
 	$(LD) $(LIBDIR_IO_EXAMPLE) -o $(OUT_IO_EXAMPLE) $(OBJ_IO_EXAMPLE)  $(LDFLAGS_IO_EXAMPLE) $(LIB_IO_EXAMPLE)
 
-$(OBJDIR_IO_EXAMPLE)/src/ex4/io_example.o: src/ex4/io_example.cpp
-	$(CXX) $(CFLAGS_IO_EXAMPLE) $(INC_IO_EXAMPLE) -c src/ex4/io_example.cpp -o $(OBJDIR_IO_EXAMPLE)/src/ex4/io_example.o
+$(OBJDIR_IO_EXAMPLE)/src/ex04/io_example.o: src/ex04/io_example.cpp
+	$(CXX) $(CFLAGS_IO_EXAMPLE) $(INC_IO_EXAMPLE) -c src/ex04/io_example.cpp -o $(OBJDIR_IO_EXAMPLE)/src/ex04/io_example.o
 
 clean_io_example: 
 	rm -f $(OBJ_IO_EXAMPLE) $(OUT_IO_EXAMPLE)
 	rm -rf bin
-	rm -rf $(OBJDIR_IO_EXAMPLE)/src/ex4
+	rm -rf $(OBJDIR_IO_EXAMPLE)/src/ex04
 
 before_floating_format: 
 	test -d bin || mkdir -p bin
-	test -d $(OBJDIR_FLOATING_FORMAT)/src/ex5 || mkdir -p $(OBJDIR_FLOATING_FORMAT)/src/ex5
+	test -d $(OBJDIR_FLOATING_FORMAT)/src/ex05 || mkdir -p $(OBJDIR_FLOATING_FORMAT)/src/ex05
 
 after_floating_format: 
 
@@ -213,17 +239,17 @@ floating_format: before_floating_format out_floating_format after_floating_forma
 out_floating_format: before_floating_format $(OBJ_FLOATING_FORMAT) $(DEP_FLOATING_FORMAT)
 	$(LD) $(LIBDIR_FLOATING_FORMAT) -o $(OUT_FLOATING_FORMAT) $(OBJ_FLOATING_FORMAT)  $(LDFLAGS_FLOATING_FORMAT) $(LIB_FLOATING_FORMAT)
 
-$(OBJDIR_FLOATING_FORMAT)/src/ex5/floating_format.o: src/ex5/floating_format.cpp
-	$(CXX) $(CFLAGS_FLOATING_FORMAT) $(INC_FLOATING_FORMAT) -c src/ex5/floating_format.cpp -o $(OBJDIR_FLOATING_FORMAT)/src/ex5/floating_format.o
+$(OBJDIR_FLOATING_FORMAT)/src/ex05/floating_format.o: src/ex05/floating_format.cpp
+	$(CXX) $(CFLAGS_FLOATING_FORMAT) $(INC_FLOATING_FORMAT) -c src/ex05/floating_format.cpp -o $(OBJDIR_FLOATING_FORMAT)/src/ex05/floating_format.o
 
 clean_floating_format: 
 	rm -f $(OBJ_FLOATING_FORMAT) $(OUT_FLOATING_FORMAT)
 	rm -rf bin
-	rm -rf $(OBJDIR_FLOATING_FORMAT)/src/ex5
+	rm -rf $(OBJDIR_FLOATING_FORMAT)/src/ex05
 
 before_vector_methods: 
 	test -d bin || mkdir -p bin
-	test -d $(OBJDIR_VECTOR_METHODS)/src/ex6 || mkdir -p $(OBJDIR_VECTOR_METHODS)/src/ex6
+	test -d $(OBJDIR_VECTOR_METHODS)/src/ex06 || mkdir -p $(OBJDIR_VECTOR_METHODS)/src/ex06
 
 after_vector_methods: 
 
@@ -232,17 +258,17 @@ vector_methods: before_vector_methods out_vector_methods after_vector_methods
 out_vector_methods: before_vector_methods $(OBJ_VECTOR_METHODS) $(DEP_VECTOR_METHODS)
 	$(LD) $(LIBDIR_VECTOR_METHODS) -o $(OUT_VECTOR_METHODS) $(OBJ_VECTOR_METHODS)  $(LDFLAGS_VECTOR_METHODS) $(LIB_VECTOR_METHODS)
 
-$(OBJDIR_VECTOR_METHODS)/src/ex6/vector_methods.o: src/ex6/vector_methods.cpp
-	$(CXX) $(CFLAGS_VECTOR_METHODS) $(INC_VECTOR_METHODS) -c src/ex6/vector_methods.cpp -o $(OBJDIR_VECTOR_METHODS)/src/ex6/vector_methods.o
+$(OBJDIR_VECTOR_METHODS)/src/ex06/vector_methods.o: src/ex06/vector_methods.cpp
+	$(CXX) $(CFLAGS_VECTOR_METHODS) $(INC_VECTOR_METHODS) -c src/ex06/vector_methods.cpp -o $(OBJDIR_VECTOR_METHODS)/src/ex06/vector_methods.o
 
 clean_vector_methods: 
 	rm -f $(OBJ_VECTOR_METHODS) $(OUT_VECTOR_METHODS)
 	rm -rf bin
-	rm -rf $(OBJDIR_VECTOR_METHODS)/src/ex6
+	rm -rf $(OBJDIR_VECTOR_METHODS)/src/ex06
 
 before_auto_alias: 
 	test -d bin || mkdir -p bin
-	test -d $(OBJDIR_AUTO_ALIAS)/src/ex7 || mkdir -p $(OBJDIR_AUTO_ALIAS)/src/ex7
+	test -d $(OBJDIR_AUTO_ALIAS)/src/ex07 || mkdir -p $(OBJDIR_AUTO_ALIAS)/src/ex07
 
 after_auto_alias: 
 
@@ -251,17 +277,17 @@ auto_alias: before_auto_alias out_auto_alias after_auto_alias
 out_auto_alias: before_auto_alias $(OBJ_AUTO_ALIAS) $(DEP_AUTO_ALIAS)
 	$(LD) $(LIBDIR_AUTO_ALIAS) -o $(OUT_AUTO_ALIAS) $(OBJ_AUTO_ALIAS)  $(LDFLAGS_AUTO_ALIAS) $(LIB_AUTO_ALIAS)
 
-$(OBJDIR_AUTO_ALIAS)/src/ex7/auto_alias.o: src/ex7/auto_alias.cpp
-	$(CXX) $(CFLAGS_AUTO_ALIAS) $(INC_AUTO_ALIAS) -c src/ex7/auto_alias.cpp -o $(OBJDIR_AUTO_ALIAS)/src/ex7/auto_alias.o
+$(OBJDIR_AUTO_ALIAS)/src/ex07/auto_alias.o: src/ex07/auto_alias.cpp
+	$(CXX) $(CFLAGS_AUTO_ALIAS) $(INC_AUTO_ALIAS) -c src/ex07/auto_alias.cpp -o $(OBJDIR_AUTO_ALIAS)/src/ex07/auto_alias.o
 
 clean_auto_alias: 
 	rm -f $(OBJ_AUTO_ALIAS) $(OUT_AUTO_ALIAS)
 	rm -rf bin
-	rm -rf $(OBJDIR_AUTO_ALIAS)/src/ex7
+	rm -rf $(OBJDIR_AUTO_ALIAS)/src/ex07
 
 before_argument_pass: 
 	test -d bin || mkdir -p bin
-	test -d $(OBJDIR_ARGUMENT_PASS)/src/ex8 || mkdir -p $(OBJDIR_ARGUMENT_PASS)/src/ex8
+	test -d $(OBJDIR_ARGUMENT_PASS)/src/ex08 || mkdir -p $(OBJDIR_ARGUMENT_PASS)/src/ex08
 
 after_argument_pass: 
 
@@ -270,15 +296,56 @@ argument_pass: before_argument_pass out_argument_pass after_argument_pass
 out_argument_pass: before_argument_pass $(OBJ_ARGUMENT_PASS) $(DEP_ARGUMENT_PASS)
 	$(LD) $(LIBDIR_ARGUMENT_PASS) -o $(OUT_ARGUMENT_PASS) $(OBJ_ARGUMENT_PASS)  $(LDFLAGS_ARGUMENT_PASS) $(LIB_ARGUMENT_PASS)
 
-$(OBJDIR_ARGUMENT_PASS)/src/ex8/argument_pass.o: src/ex8/argument_pass.cpp
-	$(CXX) $(CFLAGS_ARGUMENT_PASS) $(INC_ARGUMENT_PASS) -c src/ex8/argument_pass.cpp -o $(OBJDIR_ARGUMENT_PASS)/src/ex8/argument_pass.o
+$(OBJDIR_ARGUMENT_PASS)/src/ex08/argument_pass.o: src/ex08/argument_pass.cpp
+	$(CXX) $(CFLAGS_ARGUMENT_PASS) $(INC_ARGUMENT_PASS) -c src/ex08/argument_pass.cpp -o $(OBJDIR_ARGUMENT_PASS)/src/ex08/argument_pass.o
 
 clean_argument_pass: 
 	rm -f $(OBJ_ARGUMENT_PASS) $(OUT_ARGUMENT_PASS)
 	rm -rf bin
-	rm -rf $(OBJDIR_ARGUMENT_PASS)/src/ex8
+	rm -rf $(OBJDIR_ARGUMENT_PASS)/src/ex08
+
+before_func_overloading: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_FUNC_OVERLOADING)/src/ex09 || mkdir -p $(OBJDIR_FUNC_OVERLOADING)/src/ex09
+
+after_func_overloading: 
+
+func_overloading: before_func_overloading out_func_overloading after_func_overloading
+
+out_func_overloading: before_func_overloading $(OBJ_FUNC_OVERLOADING) $(DEP_FUNC_OVERLOADING)
+	$(LD) $(LIBDIR_FUNC_OVERLOADING) -o $(OUT_FUNC_OVERLOADING) $(OBJ_FUNC_OVERLOADING)  $(LDFLAGS_FUNC_OVERLOADING) $(LIB_FUNC_OVERLOADING)
+
+$(OBJDIR_FUNC_OVERLOADING)/src/ex09/func_overloading.o: src/ex09/func_overloading.cpp
+	$(CXX) $(CFLAGS_FUNC_OVERLOADING) $(INC_FUNC_OVERLOADING) -c src/ex09/func_overloading.cpp -o $(OBJDIR_FUNC_OVERLOADING)/src/ex09/func_overloading.o
+
+clean_func_overloading: 
+	rm -f $(OBJ_FUNC_OVERLOADING) $(OUT_FUNC_OVERLOADING)
+	rm -rf bin
+	rm -rf $(OBJDIR_FUNC_OVERLOADING)/src/ex09
+
+before_func_declaration: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_FUNC_DECLARATION)/src/ex10 || mkdir -p $(OBJDIR_FUNC_DECLARATION)/src/ex10
+
+after_func_declaration: 
+
+func_declaration: before_func_declaration out_func_declaration after_func_declaration
+
+out_func_declaration: before_func_declaration $(OBJ_FUNC_DECLARATION) $(DEP_FUNC_DECLARATION)
+	$(LD) $(LIBDIR_FUNC_DECLARATION) -o $(OUT_FUNC_DECLARATION) $(OBJ_FUNC_DECLARATION)  $(LDFLAGS_FUNC_DECLARATION) $(LIB_FUNC_DECLARATION)
+
+$(OBJDIR_FUNC_DECLARATION)/src/ex10/stats.o: src/ex10/stats.cpp
+	$(CXX) $(CFLAGS_FUNC_DECLARATION) $(INC_FUNC_DECLARATION) -c src/ex10/stats.cpp -o $(OBJDIR_FUNC_DECLARATION)/src/ex10/stats.o
+
+$(OBJDIR_FUNC_DECLARATION)/src/ex10/test_stats.o: src/ex10/test_stats.cpp
+	$(CXX) $(CFLAGS_FUNC_DECLARATION) $(INC_FUNC_DECLARATION) -c src/ex10/test_stats.cpp -o $(OBJDIR_FUNC_DECLARATION)/src/ex10/test_stats.o
+
+clean_func_declaration: 
+	rm -f $(OBJ_FUNC_DECLARATION) $(OUT_FUNC_DECLARATION)
+	rm -rf bin
+	rm -rf $(OBJDIR_FUNC_DECLARATION)/src/ex10
 
 virtual_all: spherical_coord numeric_limits string_methods io_example floating_format vector_methods auto_alias argument_pass
 
-.PHONY: before_spherical_coord after_spherical_coord clean_spherical_coord before_numeric_limits after_numeric_limits clean_numeric_limits before_string_methods after_string_methods clean_string_methods before_io_example after_io_example clean_io_example before_floating_format after_floating_format clean_floating_format before_vector_methods after_vector_methods clean_vector_methods before_auto_alias after_auto_alias clean_auto_alias before_argument_pass after_argument_pass clean_argument_pass
+.PHONY: before_spherical_coord after_spherical_coord clean_spherical_coord before_numeric_limits after_numeric_limits clean_numeric_limits before_string_methods after_string_methods clean_string_methods before_io_example after_io_example clean_io_example before_floating_format after_floating_format clean_floating_format before_vector_methods after_vector_methods clean_vector_methods before_auto_alias after_auto_alias clean_auto_alias before_argument_pass after_argument_pass clean_argument_pass before_func_overloading after_func_overloading clean_func_overloading before_func_declaration after_func_declaration clean_func_declaration
 
