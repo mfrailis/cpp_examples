@@ -58,7 +58,6 @@ int main()
 {
   const vector<double> a{4.5, 7.7};
   vector<double> b{5.6, 7.6, 1.23};
-
   vector<int> c{1,2,3,4,5};
 
   pretty_print(cout, a);

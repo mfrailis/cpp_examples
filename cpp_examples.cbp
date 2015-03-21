@@ -75,15 +75,179 @@
 				<Option object_output="obj/func_declaration" />
 				<Option type="1" />
 				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="/home/frailis/Osservatorio/doc/Lezioni/SeminarioCpp/cpp_examples/" />
+				</Compiler>
+			</Target>
+			<Target title="func_default">
+				<Option output="bin/func_default" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/func_default" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="exception_handling">
+				<Option output="bin/exception_handling" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/exception_handling" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="func_template">
+				<Option output="bin/func_template" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/func_template" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="list_example">
+				<Option output="bin/list_example" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/list_example" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="map_methods">
+				<Option output="bin/map_methods" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/map_methods" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="arrays">
+				<Option output="bin/arrays" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/arrays" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="iterators">
+				<Option output="bin/iterators" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/iterators" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="sorting">
+				<Option output="bin/sorting" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/sorting" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="lower_find">
+				<Option output="bin/lower_find" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/lower_find" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="sort_comparison">
+				<Option output="bin/sort_comparison" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/sort_comparison" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="lambda_expression">
+				<Option output="bin/lambda_expression" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/lambda_expression" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="struct_definition">
+				<Option output="bin/struct_definition" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/struct_definition" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="pointer_definition">
+				<Option output="bin/struct_definition" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/struct_definition" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="vector_galaxy">
+				<Option output="bin/vector_galaxy" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/vector_galaxy" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="simple_class">
+				<Option output="bin/simple_class" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/simple_class" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="gaussian_functor">
+				<Option output="bin/gaussian_functor" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/gaussian_functor" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="class_dynamic_alloc">
+				<Option output="bin/image_mask" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/image_mask" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="virtual_methods">
+				<Option output="bin/virtual_methods" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/virtual_methods" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="shared_galaxies">
+				<Option output="bin/shared_galaxies" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/shared_galaxies" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="eigen_example">
+				<Option output="bin/eigen_example" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/eigen_example" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="ccfits_example">
+				<Option output="bin/ccfits_example" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/ccfits_example" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Linker>
+					<Add library="CCfits" />
+				</Linker>
+			</Target>
+			<Target title="cfitsio_example">
+				<Option output="bin/cfitsio_example" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/cfitsio_example" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Linker>
+					<Add library="cfitsio" />
+				</Linker>
 			</Target>
 		</Build>
 		<VirtualTargets>
-			<Add alias="all" targets="spherical_coord;numeric_limits;string_methods;io_example;floating_format;vector_methods;auto_alias;argument_pass;" />
+			<Add alias="all" targets="spherical_coord;numeric_limits;string_methods;io_example;floating_format;vector_methods;auto_alias;argument_pass;func_overloading;func_declaration;func_default;exception_handling;func_template;list_example;map_methods;arrays;iterators;sorting;lower_find;sort_comparison;lambda_expression;struct_definition;pointer_definition;vector_galaxy;simple_class;gaussian_functor;class_dynamic_alloc;virtual_methods;shared_galaxies;eigen_example;ccfits_example;cfitsio_example;" />
 		</VirtualTargets>
 		<Compiler>
 			<Add option="-std=c++11" />
 			<Add option="-Wall" />
 			<Add option="-g" />
+			<Add directory="./src" />
 		</Compiler>
 		<Unit filename="src/ex01/spherical_coord.cpp">
 			<Option target="spherical_coord" />
@@ -114,12 +278,120 @@
 		</Unit>
 		<Unit filename="src/ex10/stats.cpp">
 			<Option target="func_declaration" />
+			<Option target="exception_handling" />
 		</Unit>
 		<Unit filename="src/ex10/stats.h">
 			<Option target="func_declaration" />
+			<Option target="exception_handling" />
 		</Unit>
 		<Unit filename="src/ex10/test_stats.cpp">
 			<Option target="func_declaration" />
+		</Unit>
+		<Unit filename="src/ex11/test_utils.cpp">
+			<Option target="func_default" />
+		</Unit>
+		<Unit filename="src/ex11/utils.cpp">
+			<Option target="func_default" />
+		</Unit>
+		<Unit filename="src/ex11/utils.h">
+			<Option target="func_default" />
+		</Unit>
+		<Unit filename="src/ex12/exception_handling.cpp">
+			<Option target="exception_handling" />
+		</Unit>
+		<Unit filename="src/ex13/test_tstats.cpp">
+			<Option target="func_template" />
+		</Unit>
+		<Unit filename="src/ex13/tstats.cpp">
+			<Option target="func_template" />
+		</Unit>
+		<Unit filename="src/ex13/tstats.h">
+			<Option target="func_template" />
+		</Unit>
+		<Unit filename="src/ex14/list_example.cpp">
+			<Option target="list_example" />
+		</Unit>
+		<Unit filename="src/ex15/map_methods.cpp">
+			<Option target="map_methods" />
+		</Unit>
+		<Unit filename="src/ex16/arrays.cpp">
+			<Option target="arrays" />
+		</Unit>
+		<Unit filename="src/ex17/iterators.cpp">
+			<Option target="iterators" />
+		</Unit>
+		<Unit filename="src/ex18/sorting.cpp">
+			<Option target="sorting" />
+		</Unit>
+		<Unit filename="src/ex19/lower_find.cpp">
+			<Option target="lower_find" />
+		</Unit>
+		<Unit filename="src/ex20/sort_comparison.cpp">
+			<Option target="sort_comparison" />
+		</Unit>
+		<Unit filename="src/ex21/lambda_expression.cpp">
+			<Option target="lambda_expression" />
+		</Unit>
+		<Unit filename="src/ex22/galaxy.cpp">
+			<Option target="struct_definition" />
+		</Unit>
+		<Unit filename="src/ex22/galaxy.h">
+			<Option target="struct_definition" />
+			<Option target="vector_galaxy" />
+		</Unit>
+		<Unit filename="src/ex23/pointer_definition.cpp">
+			<Option target="pointer_definition" />
+		</Unit>
+		<Unit filename="src/ex24/sort_pgalaxy.cpp">
+			<Option target="vector_galaxy" />
+		</Unit>
+		<Unit filename="src/ex25/test_vec3.cpp">
+			<Option target="simple_class" />
+		</Unit>
+		<Unit filename="src/ex25/vec3.cpp">
+			<Option target="simple_class" />
+		</Unit>
+		<Unit filename="src/ex25/vec3.h">
+			<Option target="simple_class" />
+		</Unit>
+		<Unit filename="src/ex26/beam.cpp">
+			<Option target="gaussian_functor" />
+		</Unit>
+		<Unit filename="src/ex26/beam.h">
+			<Option target="gaussian_functor" />
+		</Unit>
+		<Unit filename="src/ex26/test_beam.cpp">
+			<Option target="gaussian_functor" />
+		</Unit>
+		<Unit filename="src/ex27/image.cpp">
+			<Option target="class_dynamic_alloc" />
+		</Unit>
+		<Unit filename="src/ex27/image.h">
+			<Option target="class_dynamic_alloc" />
+		</Unit>
+		<Unit filename="src/ex27/test_image.cpp">
+			<Option target="class_dynamic_alloc" />
+		</Unit>
+		<Unit filename="src/ex28/property.cpp">
+			<Option target="virtual_methods" />
+		</Unit>
+		<Unit filename="src/ex28/property.h">
+			<Option target="virtual_methods" />
+		</Unit>
+		<Unit filename="src/ex28/test_property.cpp">
+			<Option target="virtual_methods" />
+		</Unit>
+		<Unit filename="src/ex29/shared_galaxy.cpp">
+			<Option target="shared_galaxies" />
+		</Unit>
+		<Unit filename="src/ex30/eigen_example.cpp">
+			<Option target="eigen_example" />
+		</Unit>
+		<Unit filename="src/ex31/ccfits_example.cpp">
+			<Option target="ccfits_example" />
+		</Unit>
+		<Unit filename="src/ex32/cfitsio_example.cpp">
+			<Option target="cfitsio_example" />
 		</Unit>
 		<Extensions>
 			<code_completion />

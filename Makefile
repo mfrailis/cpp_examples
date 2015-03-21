@@ -11,7 +11,7 @@ AR = ar
 LD = g++
 WINDRES = windres
 
-INC = 
+INC = -I./src
 CFLAGS = -std=c++11 -Wall -g
 RESINC = 
 LIBDIR = 
@@ -117,7 +117,7 @@ OBJDIR_FUNC_OVERLOADING = obj/func_overloading
 DEP_FUNC_OVERLOADING = 
 OUT_FUNC_OVERLOADING = bin/func_overloading
 
-INC_FUNC_DECLARATION = $(INC)
+INC_FUNC_DECLARATION = $(INC) -I/home/frailis/Osservatorio/doc/Lezioni/SeminarioCpp/cpp_examples/
 CFLAGS_FUNC_DECLARATION = $(CFLAGS)
 RESINC_FUNC_DECLARATION = $(RESINC)
 RCFLAGS_FUNC_DECLARATION = $(RCFLAGS)
@@ -127,6 +127,248 @@ LDFLAGS_FUNC_DECLARATION = $(LDFLAGS)
 OBJDIR_FUNC_DECLARATION = obj/func_declaration
 DEP_FUNC_DECLARATION = 
 OUT_FUNC_DECLARATION = bin/func_declaration
+
+INC_FUNC_DEFAULT = $(INC)
+CFLAGS_FUNC_DEFAULT = $(CFLAGS)
+RESINC_FUNC_DEFAULT = $(RESINC)
+RCFLAGS_FUNC_DEFAULT = $(RCFLAGS)
+LIBDIR_FUNC_DEFAULT = $(LIBDIR)
+LIB_FUNC_DEFAULT = $(LIB)
+LDFLAGS_FUNC_DEFAULT = $(LDFLAGS)
+OBJDIR_FUNC_DEFAULT = obj/func_default
+DEP_FUNC_DEFAULT = 
+OUT_FUNC_DEFAULT = bin/func_default
+
+INC_EXCEPTION_HANDLING = $(INC)
+CFLAGS_EXCEPTION_HANDLING = $(CFLAGS)
+RESINC_EXCEPTION_HANDLING = $(RESINC)
+RCFLAGS_EXCEPTION_HANDLING = $(RCFLAGS)
+LIBDIR_EXCEPTION_HANDLING = $(LIBDIR)
+LIB_EXCEPTION_HANDLING = $(LIB)
+LDFLAGS_EXCEPTION_HANDLING = $(LDFLAGS)
+OBJDIR_EXCEPTION_HANDLING = obj/exception_handling
+DEP_EXCEPTION_HANDLING = 
+OUT_EXCEPTION_HANDLING = bin/exception_handling
+
+INC_FUNC_TEMPLATE = $(INC)
+CFLAGS_FUNC_TEMPLATE = $(CFLAGS)
+RESINC_FUNC_TEMPLATE = $(RESINC)
+RCFLAGS_FUNC_TEMPLATE = $(RCFLAGS)
+LIBDIR_FUNC_TEMPLATE = $(LIBDIR)
+LIB_FUNC_TEMPLATE = $(LIB)
+LDFLAGS_FUNC_TEMPLATE = $(LDFLAGS)
+OBJDIR_FUNC_TEMPLATE = obj/func_template
+DEP_FUNC_TEMPLATE = 
+OUT_FUNC_TEMPLATE = bin/func_template
+
+INC_LIST_EXAMPLE = $(INC)
+CFLAGS_LIST_EXAMPLE = $(CFLAGS)
+RESINC_LIST_EXAMPLE = $(RESINC)
+RCFLAGS_LIST_EXAMPLE = $(RCFLAGS)
+LIBDIR_LIST_EXAMPLE = $(LIBDIR)
+LIB_LIST_EXAMPLE = $(LIB)
+LDFLAGS_LIST_EXAMPLE = $(LDFLAGS)
+OBJDIR_LIST_EXAMPLE = obj/list_example
+DEP_LIST_EXAMPLE = 
+OUT_LIST_EXAMPLE = bin/list_example
+
+INC_MAP_METHODS = $(INC)
+CFLAGS_MAP_METHODS = $(CFLAGS)
+RESINC_MAP_METHODS = $(RESINC)
+RCFLAGS_MAP_METHODS = $(RCFLAGS)
+LIBDIR_MAP_METHODS = $(LIBDIR)
+LIB_MAP_METHODS = $(LIB)
+LDFLAGS_MAP_METHODS = $(LDFLAGS)
+OBJDIR_MAP_METHODS = obj/map_methods
+DEP_MAP_METHODS = 
+OUT_MAP_METHODS = bin/map_methods
+
+INC_ARRAYS = $(INC)
+CFLAGS_ARRAYS = $(CFLAGS)
+RESINC_ARRAYS = $(RESINC)
+RCFLAGS_ARRAYS = $(RCFLAGS)
+LIBDIR_ARRAYS = $(LIBDIR)
+LIB_ARRAYS = $(LIB)
+LDFLAGS_ARRAYS = $(LDFLAGS)
+OBJDIR_ARRAYS = obj/arrays
+DEP_ARRAYS = 
+OUT_ARRAYS = bin/arrays
+
+INC_ITERATORS = $(INC)
+CFLAGS_ITERATORS = $(CFLAGS)
+RESINC_ITERATORS = $(RESINC)
+RCFLAGS_ITERATORS = $(RCFLAGS)
+LIBDIR_ITERATORS = $(LIBDIR)
+LIB_ITERATORS = $(LIB)
+LDFLAGS_ITERATORS = $(LDFLAGS)
+OBJDIR_ITERATORS = obj/iterators
+DEP_ITERATORS = 
+OUT_ITERATORS = bin/iterators
+
+INC_SORTING = $(INC)
+CFLAGS_SORTING = $(CFLAGS)
+RESINC_SORTING = $(RESINC)
+RCFLAGS_SORTING = $(RCFLAGS)
+LIBDIR_SORTING = $(LIBDIR)
+LIB_SORTING = $(LIB)
+LDFLAGS_SORTING = $(LDFLAGS)
+OBJDIR_SORTING = obj/sorting
+DEP_SORTING = 
+OUT_SORTING = bin/sorting
+
+INC_LOWER_FIND = $(INC)
+CFLAGS_LOWER_FIND = $(CFLAGS)
+RESINC_LOWER_FIND = $(RESINC)
+RCFLAGS_LOWER_FIND = $(RCFLAGS)
+LIBDIR_LOWER_FIND = $(LIBDIR)
+LIB_LOWER_FIND = $(LIB)
+LDFLAGS_LOWER_FIND = $(LDFLAGS)
+OBJDIR_LOWER_FIND = obj/lower_find
+DEP_LOWER_FIND = 
+OUT_LOWER_FIND = bin/lower_find
+
+INC_SORT_COMPARISON = $(INC)
+CFLAGS_SORT_COMPARISON = $(CFLAGS)
+RESINC_SORT_COMPARISON = $(RESINC)
+RCFLAGS_SORT_COMPARISON = $(RCFLAGS)
+LIBDIR_SORT_COMPARISON = $(LIBDIR)
+LIB_SORT_COMPARISON = $(LIB)
+LDFLAGS_SORT_COMPARISON = $(LDFLAGS)
+OBJDIR_SORT_COMPARISON = obj/sort_comparison
+DEP_SORT_COMPARISON = 
+OUT_SORT_COMPARISON = bin/sort_comparison
+
+INC_LAMBDA_EXPRESSION = $(INC)
+CFLAGS_LAMBDA_EXPRESSION = $(CFLAGS)
+RESINC_LAMBDA_EXPRESSION = $(RESINC)
+RCFLAGS_LAMBDA_EXPRESSION = $(RCFLAGS)
+LIBDIR_LAMBDA_EXPRESSION = $(LIBDIR)
+LIB_LAMBDA_EXPRESSION = $(LIB)
+LDFLAGS_LAMBDA_EXPRESSION = $(LDFLAGS)
+OBJDIR_LAMBDA_EXPRESSION = obj/lambda_expression
+DEP_LAMBDA_EXPRESSION = 
+OUT_LAMBDA_EXPRESSION = bin/lambda_expression
+
+INC_STRUCT_DEFINITION = $(INC)
+CFLAGS_STRUCT_DEFINITION = $(CFLAGS)
+RESINC_STRUCT_DEFINITION = $(RESINC)
+RCFLAGS_STRUCT_DEFINITION = $(RCFLAGS)
+LIBDIR_STRUCT_DEFINITION = $(LIBDIR)
+LIB_STRUCT_DEFINITION = $(LIB)
+LDFLAGS_STRUCT_DEFINITION = $(LDFLAGS)
+OBJDIR_STRUCT_DEFINITION = obj/struct_definition
+DEP_STRUCT_DEFINITION = 
+OUT_STRUCT_DEFINITION = bin/struct_definition
+
+INC_POINTER_DEFINITION = $(INC)
+CFLAGS_POINTER_DEFINITION = $(CFLAGS)
+RESINC_POINTER_DEFINITION = $(RESINC)
+RCFLAGS_POINTER_DEFINITION = $(RCFLAGS)
+LIBDIR_POINTER_DEFINITION = $(LIBDIR)
+LIB_POINTER_DEFINITION = $(LIB)
+LDFLAGS_POINTER_DEFINITION = $(LDFLAGS)
+OBJDIR_POINTER_DEFINITION = obj/struct_definition
+DEP_POINTER_DEFINITION = 
+OUT_POINTER_DEFINITION = bin/struct_definition
+
+INC_VECTOR_GALAXY = $(INC)
+CFLAGS_VECTOR_GALAXY = $(CFLAGS)
+RESINC_VECTOR_GALAXY = $(RESINC)
+RCFLAGS_VECTOR_GALAXY = $(RCFLAGS)
+LIBDIR_VECTOR_GALAXY = $(LIBDIR)
+LIB_VECTOR_GALAXY = $(LIB)
+LDFLAGS_VECTOR_GALAXY = $(LDFLAGS)
+OBJDIR_VECTOR_GALAXY = obj/vector_galaxy
+DEP_VECTOR_GALAXY = 
+OUT_VECTOR_GALAXY = bin/vector_galaxy
+
+INC_SIMPLE_CLASS = $(INC)
+CFLAGS_SIMPLE_CLASS = $(CFLAGS)
+RESINC_SIMPLE_CLASS = $(RESINC)
+RCFLAGS_SIMPLE_CLASS = $(RCFLAGS)
+LIBDIR_SIMPLE_CLASS = $(LIBDIR)
+LIB_SIMPLE_CLASS = $(LIB)
+LDFLAGS_SIMPLE_CLASS = $(LDFLAGS)
+OBJDIR_SIMPLE_CLASS = obj/simple_class
+DEP_SIMPLE_CLASS = 
+OUT_SIMPLE_CLASS = bin/simple_class
+
+INC_GAUSSIAN_FUNCTOR = $(INC)
+CFLAGS_GAUSSIAN_FUNCTOR = $(CFLAGS)
+RESINC_GAUSSIAN_FUNCTOR = $(RESINC)
+RCFLAGS_GAUSSIAN_FUNCTOR = $(RCFLAGS)
+LIBDIR_GAUSSIAN_FUNCTOR = $(LIBDIR)
+LIB_GAUSSIAN_FUNCTOR = $(LIB)
+LDFLAGS_GAUSSIAN_FUNCTOR = $(LDFLAGS)
+OBJDIR_GAUSSIAN_FUNCTOR = obj/gaussian_functor
+DEP_GAUSSIAN_FUNCTOR = 
+OUT_GAUSSIAN_FUNCTOR = bin/gaussian_functor
+
+INC_CLASS_DYNAMIC_ALLOC = $(INC)
+CFLAGS_CLASS_DYNAMIC_ALLOC = $(CFLAGS)
+RESINC_CLASS_DYNAMIC_ALLOC = $(RESINC)
+RCFLAGS_CLASS_DYNAMIC_ALLOC = $(RCFLAGS)
+LIBDIR_CLASS_DYNAMIC_ALLOC = $(LIBDIR)
+LIB_CLASS_DYNAMIC_ALLOC = $(LIB)
+LDFLAGS_CLASS_DYNAMIC_ALLOC = $(LDFLAGS)
+OBJDIR_CLASS_DYNAMIC_ALLOC = obj/image_mask
+DEP_CLASS_DYNAMIC_ALLOC = 
+OUT_CLASS_DYNAMIC_ALLOC = bin/image_mask
+
+INC_VIRTUAL_METHODS = $(INC)
+CFLAGS_VIRTUAL_METHODS = $(CFLAGS)
+RESINC_VIRTUAL_METHODS = $(RESINC)
+RCFLAGS_VIRTUAL_METHODS = $(RCFLAGS)
+LIBDIR_VIRTUAL_METHODS = $(LIBDIR)
+LIB_VIRTUAL_METHODS = $(LIB)
+LDFLAGS_VIRTUAL_METHODS = $(LDFLAGS)
+OBJDIR_VIRTUAL_METHODS = obj/virtual_methods
+DEP_VIRTUAL_METHODS = 
+OUT_VIRTUAL_METHODS = bin/virtual_methods
+
+INC_SHARED_GALAXIES = $(INC)
+CFLAGS_SHARED_GALAXIES = $(CFLAGS)
+RESINC_SHARED_GALAXIES = $(RESINC)
+RCFLAGS_SHARED_GALAXIES = $(RCFLAGS)
+LIBDIR_SHARED_GALAXIES = $(LIBDIR)
+LIB_SHARED_GALAXIES = $(LIB)
+LDFLAGS_SHARED_GALAXIES = $(LDFLAGS)
+OBJDIR_SHARED_GALAXIES = obj/shared_galaxies
+DEP_SHARED_GALAXIES = 
+OUT_SHARED_GALAXIES = bin/shared_galaxies
+
+INC_EIGEN_EXAMPLE = $(INC)
+CFLAGS_EIGEN_EXAMPLE = $(CFLAGS)
+RESINC_EIGEN_EXAMPLE = $(RESINC)
+RCFLAGS_EIGEN_EXAMPLE = $(RCFLAGS)
+LIBDIR_EIGEN_EXAMPLE = $(LIBDIR)
+LIB_EIGEN_EXAMPLE = $(LIB)
+LDFLAGS_EIGEN_EXAMPLE = $(LDFLAGS)
+OBJDIR_EIGEN_EXAMPLE = obj/eigen_example
+DEP_EIGEN_EXAMPLE = 
+OUT_EIGEN_EXAMPLE = bin/eigen_example
+
+INC_CCFITS_EXAMPLE = $(INC)
+CFLAGS_CCFITS_EXAMPLE = $(CFLAGS)
+RESINC_CCFITS_EXAMPLE = $(RESINC)
+RCFLAGS_CCFITS_EXAMPLE = $(RCFLAGS)
+LIBDIR_CCFITS_EXAMPLE = $(LIBDIR)
+LIB_CCFITS_EXAMPLE = $(LIB)-lCCfits
+LDFLAGS_CCFITS_EXAMPLE = $(LDFLAGS)
+OBJDIR_CCFITS_EXAMPLE = obj/ccfits_example
+DEP_CCFITS_EXAMPLE = 
+OUT_CCFITS_EXAMPLE = bin/ccfits_example
+
+INC_CFITSIO_EXAMPLE = $(INC)
+CFLAGS_CFITSIO_EXAMPLE = $(CFLAGS)
+RESINC_CFITSIO_EXAMPLE = $(RESINC)
+RCFLAGS_CFITSIO_EXAMPLE = $(RCFLAGS)
+LIBDIR_CFITSIO_EXAMPLE = $(LIBDIR)
+LIB_CFITSIO_EXAMPLE = $(LIB)-lcfitsio
+LDFLAGS_CFITSIO_EXAMPLE = $(LDFLAGS)
+OBJDIR_CFITSIO_EXAMPLE = obj/cfitsio_example
+DEP_CFITSIO_EXAMPLE = 
+OUT_CFITSIO_EXAMPLE = bin/cfitsio_example
 
 OBJ_SPHERICAL_COORD = $(OBJDIR_SPHERICAL_COORD)/src/ex01/spherical_coord.o
 
@@ -148,9 +390,53 @@ OBJ_FUNC_OVERLOADING = $(OBJDIR_FUNC_OVERLOADING)/src/ex09/func_overloading.o
 
 OBJ_FUNC_DECLARATION = $(OBJDIR_FUNC_DECLARATION)/src/ex10/stats.o $(OBJDIR_FUNC_DECLARATION)/src/ex10/test_stats.o
 
-all: spherical_coord numeric_limits string_methods io_example floating_format vector_methods auto_alias argument_pass func_overloading func_declaration
+OBJ_FUNC_DEFAULT = $(OBJDIR_FUNC_DEFAULT)/src/ex11/test_utils.o $(OBJDIR_FUNC_DEFAULT)/src/ex11/utils.o
 
-clean: clean_spherical_coord clean_numeric_limits clean_string_methods clean_io_example clean_floating_format clean_vector_methods clean_auto_alias clean_argument_pass clean_func_overloading clean_func_declaration
+OBJ_EXCEPTION_HANDLING = $(OBJDIR_EXCEPTION_HANDLING)/src/ex10/stats.o $(OBJDIR_EXCEPTION_HANDLING)/src/ex12/exception_handling.o
+
+OBJ_FUNC_TEMPLATE = $(OBJDIR_FUNC_TEMPLATE)/src/ex13/test_tstats.o $(OBJDIR_FUNC_TEMPLATE)/src/ex13/tstats.o
+
+OBJ_LIST_EXAMPLE = $(OBJDIR_LIST_EXAMPLE)/src/ex14/list_example.o
+
+OBJ_MAP_METHODS = $(OBJDIR_MAP_METHODS)/src/ex15/map_methods.o
+
+OBJ_ARRAYS = $(OBJDIR_ARRAYS)/src/ex16/arrays.o
+
+OBJ_ITERATORS = $(OBJDIR_ITERATORS)/src/ex17/iterators.o
+
+OBJ_SORTING = $(OBJDIR_SORTING)/src/ex18/sorting.o
+
+OBJ_LOWER_FIND = $(OBJDIR_LOWER_FIND)/src/ex19/lower_find.o
+
+OBJ_SORT_COMPARISON = $(OBJDIR_SORT_COMPARISON)/src/ex20/sort_comparison.o
+
+OBJ_LAMBDA_EXPRESSION = $(OBJDIR_LAMBDA_EXPRESSION)/src/ex21/lambda_expression.o
+
+OBJ_STRUCT_DEFINITION = $(OBJDIR_STRUCT_DEFINITION)/src/ex22/galaxy.o
+
+OBJ_POINTER_DEFINITION = $(OBJDIR_POINTER_DEFINITION)/src/ex23/pointer_definition.o
+
+OBJ_VECTOR_GALAXY = $(OBJDIR_VECTOR_GALAXY)/src/ex24/sort_pgalaxy.o
+
+OBJ_SIMPLE_CLASS = $(OBJDIR_SIMPLE_CLASS)/src/ex25/test_vec3.o $(OBJDIR_SIMPLE_CLASS)/src/ex25/vec3.o
+
+OBJ_GAUSSIAN_FUNCTOR = $(OBJDIR_GAUSSIAN_FUNCTOR)/src/ex26/beam.o $(OBJDIR_GAUSSIAN_FUNCTOR)/src/ex26/test_beam.o
+
+OBJ_CLASS_DYNAMIC_ALLOC = $(OBJDIR_CLASS_DYNAMIC_ALLOC)/src/ex27/image.o $(OBJDIR_CLASS_DYNAMIC_ALLOC)/src/ex27/test_image.o
+
+OBJ_VIRTUAL_METHODS = $(OBJDIR_VIRTUAL_METHODS)/src/ex28/property.o $(OBJDIR_VIRTUAL_METHODS)/src/ex28/test_property.o
+
+OBJ_SHARED_GALAXIES = $(OBJDIR_SHARED_GALAXIES)/src/ex29/shared_galaxy.o
+
+OBJ_EIGEN_EXAMPLE = $(OBJDIR_EIGEN_EXAMPLE)/src/ex30/eigen_example.o
+
+OBJ_CCFITS_EXAMPLE = $(OBJDIR_CCFITS_EXAMPLE)/src/ex31/ccfits_example.o
+
+OBJ_CFITSIO_EXAMPLE = $(OBJDIR_CFITSIO_EXAMPLE)/src/ex32/cfitsio_example.o
+
+all: spherical_coord numeric_limits string_methods io_example floating_format vector_methods auto_alias argument_pass func_overloading func_declaration func_default exception_handling func_template list_example map_methods arrays iterators sorting lower_find sort_comparison lambda_expression struct_definition pointer_definition vector_galaxy simple_class gaussian_functor class_dynamic_alloc virtual_methods shared_galaxies eigen_example ccfits_example cfitsio_example
+
+clean: clean_spherical_coord clean_numeric_limits clean_string_methods clean_io_example clean_floating_format clean_vector_methods clean_auto_alias clean_argument_pass clean_func_overloading clean_func_declaration clean_func_default clean_exception_handling clean_func_template clean_list_example clean_map_methods clean_arrays clean_iterators clean_sorting clean_lower_find clean_sort_comparison clean_lambda_expression clean_struct_definition clean_pointer_definition clean_vector_galaxy clean_simple_class clean_gaussian_functor clean_class_dynamic_alloc clean_virtual_methods clean_shared_galaxies clean_eigen_example clean_ccfits_example clean_cfitsio_example
 
 before_spherical_coord: 
 	test -d bin || mkdir -p bin
@@ -345,7 +631,448 @@ clean_func_declaration:
 	rm -rf bin
 	rm -rf $(OBJDIR_FUNC_DECLARATION)/src/ex10
 
-virtual_all: spherical_coord numeric_limits string_methods io_example floating_format vector_methods auto_alias argument_pass
+before_func_default: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_FUNC_DEFAULT)/src/ex11 || mkdir -p $(OBJDIR_FUNC_DEFAULT)/src/ex11
 
-.PHONY: before_spherical_coord after_spherical_coord clean_spherical_coord before_numeric_limits after_numeric_limits clean_numeric_limits before_string_methods after_string_methods clean_string_methods before_io_example after_io_example clean_io_example before_floating_format after_floating_format clean_floating_format before_vector_methods after_vector_methods clean_vector_methods before_auto_alias after_auto_alias clean_auto_alias before_argument_pass after_argument_pass clean_argument_pass before_func_overloading after_func_overloading clean_func_overloading before_func_declaration after_func_declaration clean_func_declaration
+after_func_default: 
+
+func_default: before_func_default out_func_default after_func_default
+
+out_func_default: before_func_default $(OBJ_FUNC_DEFAULT) $(DEP_FUNC_DEFAULT)
+	$(LD) $(LIBDIR_FUNC_DEFAULT) -o $(OUT_FUNC_DEFAULT) $(OBJ_FUNC_DEFAULT)  $(LDFLAGS_FUNC_DEFAULT) $(LIB_FUNC_DEFAULT)
+
+$(OBJDIR_FUNC_DEFAULT)/src/ex11/test_utils.o: src/ex11/test_utils.cpp
+	$(CXX) $(CFLAGS_FUNC_DEFAULT) $(INC_FUNC_DEFAULT) -c src/ex11/test_utils.cpp -o $(OBJDIR_FUNC_DEFAULT)/src/ex11/test_utils.o
+
+$(OBJDIR_FUNC_DEFAULT)/src/ex11/utils.o: src/ex11/utils.cpp
+	$(CXX) $(CFLAGS_FUNC_DEFAULT) $(INC_FUNC_DEFAULT) -c src/ex11/utils.cpp -o $(OBJDIR_FUNC_DEFAULT)/src/ex11/utils.o
+
+clean_func_default: 
+	rm -f $(OBJ_FUNC_DEFAULT) $(OUT_FUNC_DEFAULT)
+	rm -rf bin
+	rm -rf $(OBJDIR_FUNC_DEFAULT)/src/ex11
+
+before_exception_handling: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_EXCEPTION_HANDLING)/src/ex10 || mkdir -p $(OBJDIR_EXCEPTION_HANDLING)/src/ex10
+	test -d $(OBJDIR_EXCEPTION_HANDLING)/src/ex12 || mkdir -p $(OBJDIR_EXCEPTION_HANDLING)/src/ex12
+
+after_exception_handling: 
+
+exception_handling: before_exception_handling out_exception_handling after_exception_handling
+
+out_exception_handling: before_exception_handling $(OBJ_EXCEPTION_HANDLING) $(DEP_EXCEPTION_HANDLING)
+	$(LD) $(LIBDIR_EXCEPTION_HANDLING) -o $(OUT_EXCEPTION_HANDLING) $(OBJ_EXCEPTION_HANDLING)  $(LDFLAGS_EXCEPTION_HANDLING) $(LIB_EXCEPTION_HANDLING)
+
+$(OBJDIR_EXCEPTION_HANDLING)/src/ex10/stats.o: src/ex10/stats.cpp
+	$(CXX) $(CFLAGS_EXCEPTION_HANDLING) $(INC_EXCEPTION_HANDLING) -c src/ex10/stats.cpp -o $(OBJDIR_EXCEPTION_HANDLING)/src/ex10/stats.o
+
+$(OBJDIR_EXCEPTION_HANDLING)/src/ex12/exception_handling.o: src/ex12/exception_handling.cpp
+	$(CXX) $(CFLAGS_EXCEPTION_HANDLING) $(INC_EXCEPTION_HANDLING) -c src/ex12/exception_handling.cpp -o $(OBJDIR_EXCEPTION_HANDLING)/src/ex12/exception_handling.o
+
+clean_exception_handling: 
+	rm -f $(OBJ_EXCEPTION_HANDLING) $(OUT_EXCEPTION_HANDLING)
+	rm -rf bin
+	rm -rf $(OBJDIR_EXCEPTION_HANDLING)/src/ex10
+	rm -rf $(OBJDIR_EXCEPTION_HANDLING)/src/ex12
+
+before_func_template: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_FUNC_TEMPLATE)/src/ex13 || mkdir -p $(OBJDIR_FUNC_TEMPLATE)/src/ex13
+
+after_func_template: 
+
+func_template: before_func_template out_func_template after_func_template
+
+out_func_template: before_func_template $(OBJ_FUNC_TEMPLATE) $(DEP_FUNC_TEMPLATE)
+	$(LD) $(LIBDIR_FUNC_TEMPLATE) -o $(OUT_FUNC_TEMPLATE) $(OBJ_FUNC_TEMPLATE)  $(LDFLAGS_FUNC_TEMPLATE) $(LIB_FUNC_TEMPLATE)
+
+$(OBJDIR_FUNC_TEMPLATE)/src/ex13/test_tstats.o: src/ex13/test_tstats.cpp
+	$(CXX) $(CFLAGS_FUNC_TEMPLATE) $(INC_FUNC_TEMPLATE) -c src/ex13/test_tstats.cpp -o $(OBJDIR_FUNC_TEMPLATE)/src/ex13/test_tstats.o
+
+$(OBJDIR_FUNC_TEMPLATE)/src/ex13/tstats.o: src/ex13/tstats.cpp
+	$(CXX) $(CFLAGS_FUNC_TEMPLATE) $(INC_FUNC_TEMPLATE) -c src/ex13/tstats.cpp -o $(OBJDIR_FUNC_TEMPLATE)/src/ex13/tstats.o
+
+clean_func_template: 
+	rm -f $(OBJ_FUNC_TEMPLATE) $(OUT_FUNC_TEMPLATE)
+	rm -rf bin
+	rm -rf $(OBJDIR_FUNC_TEMPLATE)/src/ex13
+
+before_list_example: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_LIST_EXAMPLE)/src/ex14 || mkdir -p $(OBJDIR_LIST_EXAMPLE)/src/ex14
+
+after_list_example: 
+
+list_example: before_list_example out_list_example after_list_example
+
+out_list_example: before_list_example $(OBJ_LIST_EXAMPLE) $(DEP_LIST_EXAMPLE)
+	$(LD) $(LIBDIR_LIST_EXAMPLE) -o $(OUT_LIST_EXAMPLE) $(OBJ_LIST_EXAMPLE)  $(LDFLAGS_LIST_EXAMPLE) $(LIB_LIST_EXAMPLE)
+
+$(OBJDIR_LIST_EXAMPLE)/src/ex14/list_example.o: src/ex14/list_example.cpp
+	$(CXX) $(CFLAGS_LIST_EXAMPLE) $(INC_LIST_EXAMPLE) -c src/ex14/list_example.cpp -o $(OBJDIR_LIST_EXAMPLE)/src/ex14/list_example.o
+
+clean_list_example: 
+	rm -f $(OBJ_LIST_EXAMPLE) $(OUT_LIST_EXAMPLE)
+	rm -rf bin
+	rm -rf $(OBJDIR_LIST_EXAMPLE)/src/ex14
+
+before_map_methods: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_MAP_METHODS)/src/ex15 || mkdir -p $(OBJDIR_MAP_METHODS)/src/ex15
+
+after_map_methods: 
+
+map_methods: before_map_methods out_map_methods after_map_methods
+
+out_map_methods: before_map_methods $(OBJ_MAP_METHODS) $(DEP_MAP_METHODS)
+	$(LD) $(LIBDIR_MAP_METHODS) -o $(OUT_MAP_METHODS) $(OBJ_MAP_METHODS)  $(LDFLAGS_MAP_METHODS) $(LIB_MAP_METHODS)
+
+$(OBJDIR_MAP_METHODS)/src/ex15/map_methods.o: src/ex15/map_methods.cpp
+	$(CXX) $(CFLAGS_MAP_METHODS) $(INC_MAP_METHODS) -c src/ex15/map_methods.cpp -o $(OBJDIR_MAP_METHODS)/src/ex15/map_methods.o
+
+clean_map_methods: 
+	rm -f $(OBJ_MAP_METHODS) $(OUT_MAP_METHODS)
+	rm -rf bin
+	rm -rf $(OBJDIR_MAP_METHODS)/src/ex15
+
+before_arrays: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_ARRAYS)/src/ex16 || mkdir -p $(OBJDIR_ARRAYS)/src/ex16
+
+after_arrays: 
+
+arrays: before_arrays out_arrays after_arrays
+
+out_arrays: before_arrays $(OBJ_ARRAYS) $(DEP_ARRAYS)
+	$(LD) $(LIBDIR_ARRAYS) -o $(OUT_ARRAYS) $(OBJ_ARRAYS)  $(LDFLAGS_ARRAYS) $(LIB_ARRAYS)
+
+$(OBJDIR_ARRAYS)/src/ex16/arrays.o: src/ex16/arrays.cpp
+	$(CXX) $(CFLAGS_ARRAYS) $(INC_ARRAYS) -c src/ex16/arrays.cpp -o $(OBJDIR_ARRAYS)/src/ex16/arrays.o
+
+clean_arrays: 
+	rm -f $(OBJ_ARRAYS) $(OUT_ARRAYS)
+	rm -rf bin
+	rm -rf $(OBJDIR_ARRAYS)/src/ex16
+
+before_iterators: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_ITERATORS)/src/ex17 || mkdir -p $(OBJDIR_ITERATORS)/src/ex17
+
+after_iterators: 
+
+iterators: before_iterators out_iterators after_iterators
+
+out_iterators: before_iterators $(OBJ_ITERATORS) $(DEP_ITERATORS)
+	$(LD) $(LIBDIR_ITERATORS) -o $(OUT_ITERATORS) $(OBJ_ITERATORS)  $(LDFLAGS_ITERATORS) $(LIB_ITERATORS)
+
+$(OBJDIR_ITERATORS)/src/ex17/iterators.o: src/ex17/iterators.cpp
+	$(CXX) $(CFLAGS_ITERATORS) $(INC_ITERATORS) -c src/ex17/iterators.cpp -o $(OBJDIR_ITERATORS)/src/ex17/iterators.o
+
+clean_iterators: 
+	rm -f $(OBJ_ITERATORS) $(OUT_ITERATORS)
+	rm -rf bin
+	rm -rf $(OBJDIR_ITERATORS)/src/ex17
+
+before_sorting: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_SORTING)/src/ex18 || mkdir -p $(OBJDIR_SORTING)/src/ex18
+
+after_sorting: 
+
+sorting: before_sorting out_sorting after_sorting
+
+out_sorting: before_sorting $(OBJ_SORTING) $(DEP_SORTING)
+	$(LD) $(LIBDIR_SORTING) -o $(OUT_SORTING) $(OBJ_SORTING)  $(LDFLAGS_SORTING) $(LIB_SORTING)
+
+$(OBJDIR_SORTING)/src/ex18/sorting.o: src/ex18/sorting.cpp
+	$(CXX) $(CFLAGS_SORTING) $(INC_SORTING) -c src/ex18/sorting.cpp -o $(OBJDIR_SORTING)/src/ex18/sorting.o
+
+clean_sorting: 
+	rm -f $(OBJ_SORTING) $(OUT_SORTING)
+	rm -rf bin
+	rm -rf $(OBJDIR_SORTING)/src/ex18
+
+before_lower_find: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_LOWER_FIND)/src/ex19 || mkdir -p $(OBJDIR_LOWER_FIND)/src/ex19
+
+after_lower_find: 
+
+lower_find: before_lower_find out_lower_find after_lower_find
+
+out_lower_find: before_lower_find $(OBJ_LOWER_FIND) $(DEP_LOWER_FIND)
+	$(LD) $(LIBDIR_LOWER_FIND) -o $(OUT_LOWER_FIND) $(OBJ_LOWER_FIND)  $(LDFLAGS_LOWER_FIND) $(LIB_LOWER_FIND)
+
+$(OBJDIR_LOWER_FIND)/src/ex19/lower_find.o: src/ex19/lower_find.cpp
+	$(CXX) $(CFLAGS_LOWER_FIND) $(INC_LOWER_FIND) -c src/ex19/lower_find.cpp -o $(OBJDIR_LOWER_FIND)/src/ex19/lower_find.o
+
+clean_lower_find: 
+	rm -f $(OBJ_LOWER_FIND) $(OUT_LOWER_FIND)
+	rm -rf bin
+	rm -rf $(OBJDIR_LOWER_FIND)/src/ex19
+
+before_sort_comparison: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_SORT_COMPARISON)/src/ex20 || mkdir -p $(OBJDIR_SORT_COMPARISON)/src/ex20
+
+after_sort_comparison: 
+
+sort_comparison: before_sort_comparison out_sort_comparison after_sort_comparison
+
+out_sort_comparison: before_sort_comparison $(OBJ_SORT_COMPARISON) $(DEP_SORT_COMPARISON)
+	$(LD) $(LIBDIR_SORT_COMPARISON) -o $(OUT_SORT_COMPARISON) $(OBJ_SORT_COMPARISON)  $(LDFLAGS_SORT_COMPARISON) $(LIB_SORT_COMPARISON)
+
+$(OBJDIR_SORT_COMPARISON)/src/ex20/sort_comparison.o: src/ex20/sort_comparison.cpp
+	$(CXX) $(CFLAGS_SORT_COMPARISON) $(INC_SORT_COMPARISON) -c src/ex20/sort_comparison.cpp -o $(OBJDIR_SORT_COMPARISON)/src/ex20/sort_comparison.o
+
+clean_sort_comparison: 
+	rm -f $(OBJ_SORT_COMPARISON) $(OUT_SORT_COMPARISON)
+	rm -rf bin
+	rm -rf $(OBJDIR_SORT_COMPARISON)/src/ex20
+
+before_lambda_expression: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_LAMBDA_EXPRESSION)/src/ex21 || mkdir -p $(OBJDIR_LAMBDA_EXPRESSION)/src/ex21
+
+after_lambda_expression: 
+
+lambda_expression: before_lambda_expression out_lambda_expression after_lambda_expression
+
+out_lambda_expression: before_lambda_expression $(OBJ_LAMBDA_EXPRESSION) $(DEP_LAMBDA_EXPRESSION)
+	$(LD) $(LIBDIR_LAMBDA_EXPRESSION) -o $(OUT_LAMBDA_EXPRESSION) $(OBJ_LAMBDA_EXPRESSION)  $(LDFLAGS_LAMBDA_EXPRESSION) $(LIB_LAMBDA_EXPRESSION)
+
+$(OBJDIR_LAMBDA_EXPRESSION)/src/ex21/lambda_expression.o: src/ex21/lambda_expression.cpp
+	$(CXX) $(CFLAGS_LAMBDA_EXPRESSION) $(INC_LAMBDA_EXPRESSION) -c src/ex21/lambda_expression.cpp -o $(OBJDIR_LAMBDA_EXPRESSION)/src/ex21/lambda_expression.o
+
+clean_lambda_expression: 
+	rm -f $(OBJ_LAMBDA_EXPRESSION) $(OUT_LAMBDA_EXPRESSION)
+	rm -rf bin
+	rm -rf $(OBJDIR_LAMBDA_EXPRESSION)/src/ex21
+
+before_struct_definition: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_STRUCT_DEFINITION)/src/ex22 || mkdir -p $(OBJDIR_STRUCT_DEFINITION)/src/ex22
+
+after_struct_definition: 
+
+struct_definition: before_struct_definition out_struct_definition after_struct_definition
+
+out_struct_definition: before_struct_definition $(OBJ_STRUCT_DEFINITION) $(DEP_STRUCT_DEFINITION)
+	$(LD) $(LIBDIR_STRUCT_DEFINITION) -o $(OUT_STRUCT_DEFINITION) $(OBJ_STRUCT_DEFINITION)  $(LDFLAGS_STRUCT_DEFINITION) $(LIB_STRUCT_DEFINITION)
+
+$(OBJDIR_STRUCT_DEFINITION)/src/ex22/galaxy.o: src/ex22/galaxy.cpp
+	$(CXX) $(CFLAGS_STRUCT_DEFINITION) $(INC_STRUCT_DEFINITION) -c src/ex22/galaxy.cpp -o $(OBJDIR_STRUCT_DEFINITION)/src/ex22/galaxy.o
+
+clean_struct_definition: 
+	rm -f $(OBJ_STRUCT_DEFINITION) $(OUT_STRUCT_DEFINITION)
+	rm -rf bin
+	rm -rf $(OBJDIR_STRUCT_DEFINITION)/src/ex22
+
+before_pointer_definition: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_POINTER_DEFINITION)/src/ex23 || mkdir -p $(OBJDIR_POINTER_DEFINITION)/src/ex23
+
+after_pointer_definition: 
+
+pointer_definition: before_pointer_definition out_pointer_definition after_pointer_definition
+
+out_pointer_definition: before_pointer_definition $(OBJ_POINTER_DEFINITION) $(DEP_POINTER_DEFINITION)
+	$(LD) $(LIBDIR_POINTER_DEFINITION) -o $(OUT_POINTER_DEFINITION) $(OBJ_POINTER_DEFINITION)  $(LDFLAGS_POINTER_DEFINITION) $(LIB_POINTER_DEFINITION)
+
+$(OBJDIR_POINTER_DEFINITION)/src/ex23/pointer_definition.o: src/ex23/pointer_definition.cpp
+	$(CXX) $(CFLAGS_POINTER_DEFINITION) $(INC_POINTER_DEFINITION) -c src/ex23/pointer_definition.cpp -o $(OBJDIR_POINTER_DEFINITION)/src/ex23/pointer_definition.o
+
+clean_pointer_definition: 
+	rm -f $(OBJ_POINTER_DEFINITION) $(OUT_POINTER_DEFINITION)
+	rm -rf bin
+	rm -rf $(OBJDIR_POINTER_DEFINITION)/src/ex23
+
+before_vector_galaxy: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_VECTOR_GALAXY)/src/ex24 || mkdir -p $(OBJDIR_VECTOR_GALAXY)/src/ex24
+
+after_vector_galaxy: 
+
+vector_galaxy: before_vector_galaxy out_vector_galaxy after_vector_galaxy
+
+out_vector_galaxy: before_vector_galaxy $(OBJ_VECTOR_GALAXY) $(DEP_VECTOR_GALAXY)
+	$(LD) $(LIBDIR_VECTOR_GALAXY) -o $(OUT_VECTOR_GALAXY) $(OBJ_VECTOR_GALAXY)  $(LDFLAGS_VECTOR_GALAXY) $(LIB_VECTOR_GALAXY)
+
+$(OBJDIR_VECTOR_GALAXY)/src/ex24/sort_pgalaxy.o: src/ex24/sort_pgalaxy.cpp
+	$(CXX) $(CFLAGS_VECTOR_GALAXY) $(INC_VECTOR_GALAXY) -c src/ex24/sort_pgalaxy.cpp -o $(OBJDIR_VECTOR_GALAXY)/src/ex24/sort_pgalaxy.o
+
+clean_vector_galaxy: 
+	rm -f $(OBJ_VECTOR_GALAXY) $(OUT_VECTOR_GALAXY)
+	rm -rf bin
+	rm -rf $(OBJDIR_VECTOR_GALAXY)/src/ex24
+
+before_simple_class: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_SIMPLE_CLASS)/src/ex25 || mkdir -p $(OBJDIR_SIMPLE_CLASS)/src/ex25
+
+after_simple_class: 
+
+simple_class: before_simple_class out_simple_class after_simple_class
+
+out_simple_class: before_simple_class $(OBJ_SIMPLE_CLASS) $(DEP_SIMPLE_CLASS)
+	$(LD) $(LIBDIR_SIMPLE_CLASS) -o $(OUT_SIMPLE_CLASS) $(OBJ_SIMPLE_CLASS)  $(LDFLAGS_SIMPLE_CLASS) $(LIB_SIMPLE_CLASS)
+
+$(OBJDIR_SIMPLE_CLASS)/src/ex25/test_vec3.o: src/ex25/test_vec3.cpp
+	$(CXX) $(CFLAGS_SIMPLE_CLASS) $(INC_SIMPLE_CLASS) -c src/ex25/test_vec3.cpp -o $(OBJDIR_SIMPLE_CLASS)/src/ex25/test_vec3.o
+
+$(OBJDIR_SIMPLE_CLASS)/src/ex25/vec3.o: src/ex25/vec3.cpp
+	$(CXX) $(CFLAGS_SIMPLE_CLASS) $(INC_SIMPLE_CLASS) -c src/ex25/vec3.cpp -o $(OBJDIR_SIMPLE_CLASS)/src/ex25/vec3.o
+
+clean_simple_class: 
+	rm -f $(OBJ_SIMPLE_CLASS) $(OUT_SIMPLE_CLASS)
+	rm -rf bin
+	rm -rf $(OBJDIR_SIMPLE_CLASS)/src/ex25
+
+before_gaussian_functor: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_GAUSSIAN_FUNCTOR)/src/ex26 || mkdir -p $(OBJDIR_GAUSSIAN_FUNCTOR)/src/ex26
+
+after_gaussian_functor: 
+
+gaussian_functor: before_gaussian_functor out_gaussian_functor after_gaussian_functor
+
+out_gaussian_functor: before_gaussian_functor $(OBJ_GAUSSIAN_FUNCTOR) $(DEP_GAUSSIAN_FUNCTOR)
+	$(LD) $(LIBDIR_GAUSSIAN_FUNCTOR) -o $(OUT_GAUSSIAN_FUNCTOR) $(OBJ_GAUSSIAN_FUNCTOR)  $(LDFLAGS_GAUSSIAN_FUNCTOR) $(LIB_GAUSSIAN_FUNCTOR)
+
+$(OBJDIR_GAUSSIAN_FUNCTOR)/src/ex26/beam.o: src/ex26/beam.cpp
+	$(CXX) $(CFLAGS_GAUSSIAN_FUNCTOR) $(INC_GAUSSIAN_FUNCTOR) -c src/ex26/beam.cpp -o $(OBJDIR_GAUSSIAN_FUNCTOR)/src/ex26/beam.o
+
+$(OBJDIR_GAUSSIAN_FUNCTOR)/src/ex26/test_beam.o: src/ex26/test_beam.cpp
+	$(CXX) $(CFLAGS_GAUSSIAN_FUNCTOR) $(INC_GAUSSIAN_FUNCTOR) -c src/ex26/test_beam.cpp -o $(OBJDIR_GAUSSIAN_FUNCTOR)/src/ex26/test_beam.o
+
+clean_gaussian_functor: 
+	rm -f $(OBJ_GAUSSIAN_FUNCTOR) $(OUT_GAUSSIAN_FUNCTOR)
+	rm -rf bin
+	rm -rf $(OBJDIR_GAUSSIAN_FUNCTOR)/src/ex26
+
+before_class_dynamic_alloc: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_CLASS_DYNAMIC_ALLOC)/src/ex27 || mkdir -p $(OBJDIR_CLASS_DYNAMIC_ALLOC)/src/ex27
+
+after_class_dynamic_alloc: 
+
+class_dynamic_alloc: before_class_dynamic_alloc out_class_dynamic_alloc after_class_dynamic_alloc
+
+out_class_dynamic_alloc: before_class_dynamic_alloc $(OBJ_CLASS_DYNAMIC_ALLOC) $(DEP_CLASS_DYNAMIC_ALLOC)
+	$(LD) $(LIBDIR_CLASS_DYNAMIC_ALLOC) -o $(OUT_CLASS_DYNAMIC_ALLOC) $(OBJ_CLASS_DYNAMIC_ALLOC)  $(LDFLAGS_CLASS_DYNAMIC_ALLOC) $(LIB_CLASS_DYNAMIC_ALLOC)
+
+$(OBJDIR_CLASS_DYNAMIC_ALLOC)/src/ex27/image.o: src/ex27/image.cpp
+	$(CXX) $(CFLAGS_CLASS_DYNAMIC_ALLOC) $(INC_CLASS_DYNAMIC_ALLOC) -c src/ex27/image.cpp -o $(OBJDIR_CLASS_DYNAMIC_ALLOC)/src/ex27/image.o
+
+$(OBJDIR_CLASS_DYNAMIC_ALLOC)/src/ex27/test_image.o: src/ex27/test_image.cpp
+	$(CXX) $(CFLAGS_CLASS_DYNAMIC_ALLOC) $(INC_CLASS_DYNAMIC_ALLOC) -c src/ex27/test_image.cpp -o $(OBJDIR_CLASS_DYNAMIC_ALLOC)/src/ex27/test_image.o
+
+clean_class_dynamic_alloc: 
+	rm -f $(OBJ_CLASS_DYNAMIC_ALLOC) $(OUT_CLASS_DYNAMIC_ALLOC)
+	rm -rf bin
+	rm -rf $(OBJDIR_CLASS_DYNAMIC_ALLOC)/src/ex27
+
+before_virtual_methods: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_VIRTUAL_METHODS)/src/ex28 || mkdir -p $(OBJDIR_VIRTUAL_METHODS)/src/ex28
+
+after_virtual_methods: 
+
+virtual_methods: before_virtual_methods out_virtual_methods after_virtual_methods
+
+out_virtual_methods: before_virtual_methods $(OBJ_VIRTUAL_METHODS) $(DEP_VIRTUAL_METHODS)
+	$(LD) $(LIBDIR_VIRTUAL_METHODS) -o $(OUT_VIRTUAL_METHODS) $(OBJ_VIRTUAL_METHODS)  $(LDFLAGS_VIRTUAL_METHODS) $(LIB_VIRTUAL_METHODS)
+
+$(OBJDIR_VIRTUAL_METHODS)/src/ex28/property.o: src/ex28/property.cpp
+	$(CXX) $(CFLAGS_VIRTUAL_METHODS) $(INC_VIRTUAL_METHODS) -c src/ex28/property.cpp -o $(OBJDIR_VIRTUAL_METHODS)/src/ex28/property.o
+
+$(OBJDIR_VIRTUAL_METHODS)/src/ex28/test_property.o: src/ex28/test_property.cpp
+	$(CXX) $(CFLAGS_VIRTUAL_METHODS) $(INC_VIRTUAL_METHODS) -c src/ex28/test_property.cpp -o $(OBJDIR_VIRTUAL_METHODS)/src/ex28/test_property.o
+
+clean_virtual_methods: 
+	rm -f $(OBJ_VIRTUAL_METHODS) $(OUT_VIRTUAL_METHODS)
+	rm -rf bin
+	rm -rf $(OBJDIR_VIRTUAL_METHODS)/src/ex28
+
+before_shared_galaxies: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_SHARED_GALAXIES)/src/ex29 || mkdir -p $(OBJDIR_SHARED_GALAXIES)/src/ex29
+
+after_shared_galaxies: 
+
+shared_galaxies: before_shared_galaxies out_shared_galaxies after_shared_galaxies
+
+out_shared_galaxies: before_shared_galaxies $(OBJ_SHARED_GALAXIES) $(DEP_SHARED_GALAXIES)
+	$(LD) $(LIBDIR_SHARED_GALAXIES) -o $(OUT_SHARED_GALAXIES) $(OBJ_SHARED_GALAXIES)  $(LDFLAGS_SHARED_GALAXIES) $(LIB_SHARED_GALAXIES)
+
+$(OBJDIR_SHARED_GALAXIES)/src/ex29/shared_galaxy.o: src/ex29/shared_galaxy.cpp
+	$(CXX) $(CFLAGS_SHARED_GALAXIES) $(INC_SHARED_GALAXIES) -c src/ex29/shared_galaxy.cpp -o $(OBJDIR_SHARED_GALAXIES)/src/ex29/shared_galaxy.o
+
+clean_shared_galaxies: 
+	rm -f $(OBJ_SHARED_GALAXIES) $(OUT_SHARED_GALAXIES)
+	rm -rf bin
+	rm -rf $(OBJDIR_SHARED_GALAXIES)/src/ex29
+
+before_eigen_example: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_EIGEN_EXAMPLE)/src/ex30 || mkdir -p $(OBJDIR_EIGEN_EXAMPLE)/src/ex30
+
+after_eigen_example: 
+
+eigen_example: before_eigen_example out_eigen_example after_eigen_example
+
+out_eigen_example: before_eigen_example $(OBJ_EIGEN_EXAMPLE) $(DEP_EIGEN_EXAMPLE)
+	$(LD) $(LIBDIR_EIGEN_EXAMPLE) -o $(OUT_EIGEN_EXAMPLE) $(OBJ_EIGEN_EXAMPLE)  $(LDFLAGS_EIGEN_EXAMPLE) $(LIB_EIGEN_EXAMPLE)
+
+$(OBJDIR_EIGEN_EXAMPLE)/src/ex30/eigen_example.o: src/ex30/eigen_example.cpp
+	$(CXX) $(CFLAGS_EIGEN_EXAMPLE) $(INC_EIGEN_EXAMPLE) -c src/ex30/eigen_example.cpp -o $(OBJDIR_EIGEN_EXAMPLE)/src/ex30/eigen_example.o
+
+clean_eigen_example: 
+	rm -f $(OBJ_EIGEN_EXAMPLE) $(OUT_EIGEN_EXAMPLE)
+	rm -rf bin
+	rm -rf $(OBJDIR_EIGEN_EXAMPLE)/src/ex30
+
+before_ccfits_example: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_CCFITS_EXAMPLE)/src/ex31 || mkdir -p $(OBJDIR_CCFITS_EXAMPLE)/src/ex31
+
+after_ccfits_example: 
+
+ccfits_example: before_ccfits_example out_ccfits_example after_ccfits_example
+
+out_ccfits_example: before_ccfits_example $(OBJ_CCFITS_EXAMPLE) $(DEP_CCFITS_EXAMPLE)
+	$(LD) $(LIBDIR_CCFITS_EXAMPLE) -o $(OUT_CCFITS_EXAMPLE) $(OBJ_CCFITS_EXAMPLE)  $(LDFLAGS_CCFITS_EXAMPLE) $(LIB_CCFITS_EXAMPLE)
+
+$(OBJDIR_CCFITS_EXAMPLE)/src/ex31/ccfits_example.o: src/ex31/ccfits_example.cpp
+	$(CXX) $(CFLAGS_CCFITS_EXAMPLE) $(INC_CCFITS_EXAMPLE) -c src/ex31/ccfits_example.cpp -o $(OBJDIR_CCFITS_EXAMPLE)/src/ex31/ccfits_example.o
+
+clean_ccfits_example: 
+	rm -f $(OBJ_CCFITS_EXAMPLE) $(OUT_CCFITS_EXAMPLE)
+	rm -rf bin
+	rm -rf $(OBJDIR_CCFITS_EXAMPLE)/src/ex31
+
+before_cfitsio_example: 
+	test -d bin || mkdir -p bin
+	test -d $(OBJDIR_CFITSIO_EXAMPLE)/src/ex32 || mkdir -p $(OBJDIR_CFITSIO_EXAMPLE)/src/ex32
+
+after_cfitsio_example: 
+
+cfitsio_example: before_cfitsio_example out_cfitsio_example after_cfitsio_example
+
+out_cfitsio_example: before_cfitsio_example $(OBJ_CFITSIO_EXAMPLE) $(DEP_CFITSIO_EXAMPLE)
+	$(LD) $(LIBDIR_CFITSIO_EXAMPLE) -o $(OUT_CFITSIO_EXAMPLE) $(OBJ_CFITSIO_EXAMPLE)  $(LDFLAGS_CFITSIO_EXAMPLE) $(LIB_CFITSIO_EXAMPLE)
+
+$(OBJDIR_CFITSIO_EXAMPLE)/src/ex32/cfitsio_example.o: src/ex32/cfitsio_example.cpp
+	$(CXX) $(CFLAGS_CFITSIO_EXAMPLE) $(INC_CFITSIO_EXAMPLE) -c src/ex32/cfitsio_example.cpp -o $(OBJDIR_CFITSIO_EXAMPLE)/src/ex32/cfitsio_example.o
+
+clean_cfitsio_example: 
+	rm -f $(OBJ_CFITSIO_EXAMPLE) $(OUT_CFITSIO_EXAMPLE)
+	rm -rf bin
+	rm -rf $(OBJDIR_CFITSIO_EXAMPLE)/src/ex32
+
+virtual_all: spherical_coord numeric_limits string_methods io_example floating_format vector_methods auto_alias argument_pass func_overloading func_declaration func_default exception_handling func_template list_example map_methods arrays iterators sorting lower_find sort_comparison lambda_expression struct_definition pointer_definition vector_galaxy simple_class gaussian_functor class_dynamic_alloc virtual_methods shared_galaxies eigen_example ccfits_example cfitsio_example
+
+.PHONY: before_spherical_coord after_spherical_coord clean_spherical_coord before_numeric_limits after_numeric_limits clean_numeric_limits before_string_methods after_string_methods clean_string_methods before_io_example after_io_example clean_io_example before_floating_format after_floating_format clean_floating_format before_vector_methods after_vector_methods clean_vector_methods before_auto_alias after_auto_alias clean_auto_alias before_argument_pass after_argument_pass clean_argument_pass before_func_overloading after_func_overloading clean_func_overloading before_func_declaration after_func_declaration clean_func_declaration before_func_default after_func_default clean_func_default before_exception_handling after_exception_handling clean_exception_handling before_func_template after_func_template clean_func_template before_list_example after_list_example clean_list_example before_map_methods after_map_methods clean_map_methods before_arrays after_arrays clean_arrays before_iterators after_iterators clean_iterators before_sorting after_sorting clean_sorting before_lower_find after_lower_find clean_lower_find before_sort_comparison after_sort_comparison clean_sort_comparison before_lambda_expression after_lambda_expression clean_lambda_expression before_struct_definition after_struct_definition clean_struct_definition before_pointer_definition after_pointer_definition clean_pointer_definition before_vector_galaxy after_vector_galaxy clean_vector_galaxy before_simple_class after_simple_class clean_simple_class before_gaussian_functor after_gaussian_functor clean_gaussian_functor before_class_dynamic_alloc after_class_dynamic_alloc clean_class_dynamic_alloc before_virtual_methods after_virtual_methods clean_virtual_methods before_shared_galaxies after_shared_galaxies clean_shared_galaxies before_eigen_example after_eigen_example clean_eigen_example before_ccfits_example after_ccfits_example clean_ccfits_example before_cfitsio_example after_cfitsio_example clean_cfitsio_example
 

@@ -8,6 +8,6 @@
 double median(std::vector<double>);
 
 // Function returning the
-double mean(std::vector<double>&);
+double mean(const std::vector<double>&);
 
 #endif // end of GUARD_STATS_H
