@@ -225,6 +225,9 @@
 				<Option object_output="obj/ccfits_example" />
 				<Option type="1" />
 				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="/usr/include/cfitsio" />
+				</Compiler>
 				<Linker>
 					<Add library="CCfits" />
 				</Linker>
@@ -235,6 +238,9 @@
 				<Option object_output="obj/cfitsio_example" />
 				<Option type="1" />
 				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="/usr/include/cfitsio" />
+				</Compiler>
 				<Linker>
 					<Add library="cfitsio" />
 				</Linker>
